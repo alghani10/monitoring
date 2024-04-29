@@ -4,11 +4,11 @@ global:
 scrape_configs:
   - job_name: "prometheus"
     static_configs:
-      - targets: ["20.205.138.251:9090"]
+      - targets: ["IP:PORT"]
   - job_name: "node"
     static_configs:
-      - targets: ["20.205.138.251:9100"]
+      - targets: ["IP:PORT"]
   - job_name: "ipfs-ac"
     metrics_path: "/debug/metrics/prometheus"
     static_configs:
-      - targets: ["20.205.138.251:5001"]
+      - targets: ["IP:PORT"]
