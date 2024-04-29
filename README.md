@@ -1,2 +1,2 @@
 # monitoring
-grafana dan promentheus
+grafana dan prometheus
