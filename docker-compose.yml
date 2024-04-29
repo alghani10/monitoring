@@ -1,0 +1,17 @@
+services:
+  prometheus:
+    image: bitnami/prometheus:latest
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/opt/bitnami/prometheus/conf/prometheus.yml
+
+  grafana:
+    image: grafana/grafana:latest-ubuntu
+    ports:
+      - "3000:3000"
+
+  node-exporter:
+    image: bitnami/node-exporter:latest
+    ports:
+      - "9100:9100"
